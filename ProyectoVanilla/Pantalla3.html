@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contenedor">
+        <div id="caja" style="width: 400px;">
+            <label for="freeText">pregunta</label><br>
+            <textarea id="freeText" name="freeText" rows="5" cols="30" placeholder="Escriba aquí una pregunta."></textarea><br><br>
+            <!-- Opción Verdadero -->
+            <label style="margin: 0px 40px;">
+                Verdadero
+                <input type="radio" name="verdaderoFalso" value="verdadero" id="inputRadio">
+            </label>
+            <!-- Opción Falso -->
+            <label style="margin: 0px 40px;">
+                Falso
+                <input type="radio" name="verdaderoFalso" value="falso" id="inputRadio">
+            </label> <br> <br>
+
+            <label for="numberInput">puntuación</label><br>
+            <input type="number" id="numberInput" name="numberInput" min="0" max="9" step="1" placeholder="0-9"><br><br><br><br>
+
+            <button id="buttAtras" style="margin: 0px 40px; padding: 20px;">Atrás</button>
+            <button id="buttGrabar" style="margin: 0px 40px; padding: 20px;">Grabar</button>
+
+
+
+        </div>
+
+        <div id="caja2" style="width: 600px;">
+            <table border="1">
+                <tr>
+                    <th>Pregunta</th>
+                    <th>Respuesta</th>
+                    <th>Puntuación</th>
+                    <th>Estado</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+    <script src="formulario.js"></script>
+</body>
+</html>
